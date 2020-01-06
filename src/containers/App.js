@@ -165,7 +165,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Particles className='particles' params={particlesOptions} />
+        
         <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange}/>
         {this.routeFunction()}
       </div>
