@@ -110,7 +110,7 @@ class App extends React.Component {
 
   onPictureSubmit = () => {
     this.setState({imageUrl: this.state.input})
-      fetch('http://localhost:3000/image', {
+      fetch('https://blooming-shelf-58829.herokuapp.com/image', {
         method: 'post',
         headers: {'Content-type':'application/json'},
         body: JSON.stringify({
@@ -120,7 +120,7 @@ class App extends React.Component {
       .then(response => response.json())
       .then( response => {
         if(response){
-          fetch('http://localhost:3000/image', {
+          fetch('https://blooming-shelf-58829.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-type':'application/json'},
             body: JSON.stringify({
